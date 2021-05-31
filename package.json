@@ -1,0 +1,18 @@
+{
+	"name": "hello-ts-cli",
+	"version": "1.0.0",
+	"main": "lib/cli.js",
+	"bin": {
+		"hello-ts-cli": "lib/cli.js"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"@tsconfig/node14": "^1.0.0",
+		"@types/node": "^15.6.1",
+		"typescript": "^4.3.2"
+	},
+	"dependencies": {
+		"chalk": "^4.1.1",
+		"commander": "^7.2.0"
+	}
+}

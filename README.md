@@ -284,7 +284,7 @@ yarn publish --access public
 
 Ref: https://docs.npmjs.com/creating-and-publishing-scoped-public-packages
 
-## 📌Update yarn package
+## 📌Update and publish yarn package
 ```sh
 $ yarn version
 ...
@@ -300,6 +300,9 @@ v1.0.1
 
 # So, just push new version to remote
 git push origin v1.0.1
+
+# publish updated version
+yarn publish
 ```
 
 ## Refs

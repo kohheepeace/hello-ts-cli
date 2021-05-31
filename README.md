@@ -36,7 +36,7 @@ console.log("Hello World");
 Let's check basic typescript command.
 
 https://www.typescriptlang.org/docs/handbook/compiler-options.html
-### ✔`tsc`
+### ✅`tsc`
 
 `tsc` is the command to compile the Typescript code.
 
@@ -44,7 +44,7 @@ https://www.typescriptlang.org/docs/handbook/compiler-options.html
 yarn tsc src/cli.ts
 ```
 This command creates `src/cli.js`.
-### ✔`tsc --watch`
+### ✅`tsc --watch`
 Automatically compile `ts` files when you make a change.
 ```sh
 tsc src/index.ts --watch
@@ -52,17 +52,17 @@ tsc src/index.ts --watch
 
 ## 📌`tsconfig.json`
 https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
-### ✔What is `tsconfig.json` ?
+### ✅What is `tsconfig.json` ?
 - Specify compile options
 - Indicates that the directory is the root of a TypeScript project
 - You can specify which files to compile and which files to exclude (**you don't need to specify each files to compile**).
 
-### ✔Make `tsconfig.json`
+### ✅Make `tsconfig.json`
 ```
 yarn tsc --init
 ```
 to create the `tsconfig.json` file.
-### ✔Use Recommended `tsconfig.json` settings
+### ✅Use Recommended `tsconfig.json` settings
 📝In the beginning, you may not know what settings to use, so let's extend the recommended settings.
 
 This time, we will use the recommended settings for `node14`.
@@ -85,7 +85,7 @@ Then,
 }
 ```
 
-### ✔ Add `rootDir`
+### ✅ Add `rootDir`
 Set the `rootDir` to `src` since `ts` files are only stored under the `src` directory.
 
 `tsconfig.json`
@@ -103,7 +103,7 @@ Set the `rootDir` to `src` since `ts` files are only stored under the `src` dire
 Ref: https://www.typescriptlang.org/tsconfig#rootDir
 
 
-### ✔ Change output dir
+### ✅ Change output dir
 - Change the output destination of the compiled `.ts` file to `lib`.
 - Also, add exclude `lib` in `tsconfig.json`.
 ```json
@@ -256,11 +256,31 @@ Then,
 ```sh
 # git tagging before publish
 $ git tag v1.0.0
+$ git tag -l
+v1.0.0
 $ git push origin v1.0.0
 
 # publish package
 $ yarn publish
 ```
+
+### ✅If package name is already taken
+
+Change name in `package.json`
+```json
+{
+	"name": "@username/hello-ts-cli",
+  ...
+}
+```
+
+Then
+
+```sh
+yarn publish --access public
+```
+
+Ref: https://docs.npmjs.com/creating-and-publishing-scoped-public-packages
 
 ## 📌Update yarn package
 ```sh

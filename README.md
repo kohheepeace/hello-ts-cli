@@ -207,6 +207,8 @@ yarn tsc
 hello-ts-cli
 ```
 
+![2021-06-01_08h25_51](https://user-images.githubusercontent.com/29557494/120248657-114b1580-c2b3-11eb-93c8-4741b29aee5f.png)
+
 ## 📌Accept Args
 https://github.com/tj/commander.js/
 

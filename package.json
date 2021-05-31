@@ -5,6 +5,7 @@
 	"bin": {
 		"hello-ts-cli": "lib/cli.js"
 	},
+	"homepage": "https://github.com/kohheepeace/hello-ts-cli/blob/main/README.md",
 	"license": "MIT",
 	"devDependencies": {
 		"@tsconfig/node14": "^1.0.0",

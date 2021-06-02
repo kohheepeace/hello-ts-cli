@@ -284,6 +284,20 @@ yarn publish --access public
 
 Ref: https://docs.npmjs.com/creating-and-publishing-scoped-public-packages
 
+### ✅Files included in package by `yarn publish`
+You can check what files will be included in your package, by running `npx npm-packlist`.
+
+```sh
+$npx npm-packlist
+lib/cli.js
+package.json
+tsconfig.json
+README.md
+src/cli.ts
+```
+
+Ref: https://docs.npmjs.com/cli/v7/commands/npm-publish#files-included-in-package
+
 ## 📌Update and publish yarn package
 ```sh
 $ yarn version

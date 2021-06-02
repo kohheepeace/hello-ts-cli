@@ -5,6 +5,9 @@
 	"bin": {
 		"hello-ts-cli": "lib/cli.js"
 	},
+	"scripts": {
+		"prepare": "tsc"
+	},
 	"homepage": "https://github.com/kohheepeace/hello-ts-cli/blob/main/README.md",
 	"license": "MIT",
 	"devDependencies": {

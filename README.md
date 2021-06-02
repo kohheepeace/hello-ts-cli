@@ -298,6 +298,21 @@ src/cli.ts
 
 Ref: https://docs.npmjs.com/cli/v7/commands/npm-publish#files-included-in-package
 
+### ✅Prevent the possibility of forgetting to build before publish.
+
+If you put the following in `package.json`, it will automatically build the typescript file when you type `yarn publish`.
+
+In `package.json`
+```
+...
+"scripts": {
+	"prepare": "tsc"
+},
+...
+```
+
+Ref: https://docs.npmjs.com/cli/v7/using-npm/scripts#life-cycle-scripts
+
 ## 📌Update and publish yarn package
 ```sh
 $ yarn version

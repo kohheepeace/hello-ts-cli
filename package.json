@@ -1,6 +1,6 @@
 {
 	"name": "@kohheepeace/hello-ts-cli",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"main": "lib/cli.js",
 	"bin": {
 		"hello-ts-cli": "lib/cli.js"
